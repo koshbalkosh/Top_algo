@@ -30,3 +30,13 @@ def is_palindrome(s):
   if s[0] != s[-1]:
     return False
   return is_palindrome(s[1:-1])
+
+
+# 4. Определение палиндрома с учетом пробелов и знаков препинания
+
+s = "A man, a plan, a canal: Panama"
+s = ''.join(c for c in s if c.isalnum()).lower()
+if s == s[::-1]:
+  print("Это палиндром")
+else:
+  print("Это не палиндром")
