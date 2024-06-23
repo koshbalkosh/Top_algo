@@ -40,3 +40,16 @@ if s == s[::-1]:
   print("Это палиндром")
 else:
   print("Это не палиндром")
+
+
+# 5. Использование стека
+
+def is_palindrome(s):
+  s = ''.join(c for c in s if c.isalnum()).lower()
+  stack = list()
+  for character in s:
+    stack.append(character)
+  for character in s:
+    if character != stack.pop():
+      return False
+  return True
