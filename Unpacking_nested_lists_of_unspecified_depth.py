@@ -24,3 +24,5 @@ def flatten(array: Iterable) -> List:
   return new_array
 
 
+# Вариант 2:
+
