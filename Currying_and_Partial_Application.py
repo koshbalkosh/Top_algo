@@ -38,3 +38,5 @@ greet('Ivan')
 
 # Или вариант с lambda:
 
+greet_deeply_curried = lambda greeting: lambda separator: lambda emphasis: lambda name: \
+  print(greeting + separator + name + emphasis)
